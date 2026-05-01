@@ -59,7 +59,7 @@ export default function GallerySection() {
 
   return (
     <>
-      <section id="gallery" className="bg-[#0a0a0a] py-24 lg:py-32">
+      <section id="gallery" className="bg-[#0a0a0a] py-16 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           {/* Header */}
           <motion.div
@@ -67,7 +67,7 @@ export default function GallerySection() {
             initial={{ opacity: 0, y: 40 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7 }}
-            className="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-6"
+            className="flex flex-col lg:flex-row lg:items-end justify-between mb-8 lg:mb-12 gap-5"
           >
             <div>
               <span className="section-label">Unsere Arbeit</span>

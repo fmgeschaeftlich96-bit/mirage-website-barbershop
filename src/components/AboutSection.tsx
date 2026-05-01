@@ -28,7 +28,7 @@ export default function AboutSection() {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="about" className="bg-[#0a0a0a] py-24 lg:py-32 overflow-hidden">
+    <section id="about" className="bg-[#0a0a0a] py-16 lg:py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         {/* Header */}
         <motion.div
@@ -36,7 +36,7 @@ export default function AboutSection() {
           initial={{ opacity: 0, y: 40 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
-          className="mb-16"
+          className="mb-10 lg:mb-16"
         >
           <span className="section-label">Wer wir sind</span>
           <span className="gold-line mt-3" />
@@ -48,10 +48,10 @@ export default function AboutSection() {
         </motion.div>
 
         {/* Content Grid */}
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-24 items-center">
           {/* Text Side */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0, x: -20 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
@@ -77,7 +77,7 @@ export default function AboutSection() {
               den Punkt — mit Ruhe, Präzision und echtem Interesse an jedem
               Kunden.
             </p>
-            <p className="text-[#9a9585] text-base leading-relaxed mb-10">
+            <p className="text-[#9a9585] text-base leading-relaxed mb-7 lg:mb-10">
               Was als ein Standort begann, wächst. Heute findest du uns in
               Neuruppin und Oranienburg — und es werden mehr.
             </p>
@@ -108,7 +108,7 @@ export default function AboutSection() {
 
           {/* Image Side */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 0, x: 20 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
             className="relative"

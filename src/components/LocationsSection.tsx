@@ -57,7 +57,7 @@ export default function LocationsSection() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="locations" className="bg-[#080808] py-24 lg:py-32">
+    <section id="locations" className="bg-[#080808] py-16 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         {/* Header */}
         <motion.div
@@ -65,7 +65,7 @@ export default function LocationsSection() {
           initial={{ opacity: 0, y: 40 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
-          className="text-center mb-16"
+          className="text-center mb-10 lg:mb-16"
         >
           <span className="section-label">Wo du uns findest</span>
           <span
@@ -89,7 +89,7 @@ export default function LocationsSection() {
               className="border border-[#1a1a1a] hover:border-[#c9a84c]/30 transition-colors duration-500 overflow-hidden"
             >
               {/* Shop Image Strip */}
-              <div className="grid grid-cols-3 h-44">
+              <div className="grid grid-cols-3 h-32 lg:h-44">
                 {loc.shopImages.map((img, j) => (
                   <div key={j} className="relative overflow-hidden group">
                     <Image
@@ -106,7 +106,7 @@ export default function LocationsSection() {
               </div>
 
               {/* Map */}
-              <div className="relative h-52 overflow-hidden">
+              <div className="relative h-44 lg:h-52 overflow-hidden">
                 <iframe
                   src={loc.mapSrc}
                   width="100%"
@@ -131,7 +131,7 @@ export default function LocationsSection() {
               </div>
 
               {/* Info */}
-              <div className="p-6 lg:p-8">
+              <div className="p-5 lg:p-8">
                 <h3
                   className="text-[#f5f0e8] text-2xl font-bold mb-6"
                   style={{ fontFamily: "var(--font-playfair)" }}

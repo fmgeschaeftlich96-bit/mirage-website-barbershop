@@ -67,7 +67,7 @@ export default function ReviewsSection() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section className="bg-[#0a0a0a] border-y border-[#1a1a1a] py-16 lg:py-20">
+    <section className="bg-[#0a0a0a] border-y border-[#1a1a1a] py-12 lg:py-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         {/* Header */}
         <motion.div
@@ -75,7 +75,7 @@ export default function ReviewsSection() {
           initial={{ opacity: 0, y: 24 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 mb-10"
+          className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-6 mb-8 lg:mb-10"
         >
           <div className="flex items-center gap-4">
             <GoogleIcon />

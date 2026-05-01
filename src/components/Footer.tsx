@@ -12,8 +12,8 @@ const quickLinks = [
 export default function Footer() {
   return (
     <footer id="contact" className="bg-[#050505] border-t border-[#1a1a1a]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16 lg:py-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 mb-12">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-12 lg:py-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-10 lg:mb-12">
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">

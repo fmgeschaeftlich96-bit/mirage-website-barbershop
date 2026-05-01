@@ -93,8 +93,8 @@ export default function ServicesSection() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="services" className="bg-[#0a0a0a] py-24 lg:py-32">
-      <div className="w-full border-t border-b border-[#1a1a1a] py-24 lg:py-32">
+    <section id="services" className="bg-[#0a0a0a] py-12 lg:py-20">
+      <div className="w-full border-t border-b border-[#1a1a1a] py-12 lg:py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           {/* Header */}
           <motion.div
@@ -102,7 +102,7 @@ export default function ServicesSection() {
             initial={{ opacity: 0, y: 40 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7 }}
-            className="text-center mb-16"
+            className="text-center mb-10 lg:mb-16"
           >
             <span className="section-label">Was wir tun</span>
             <span
@@ -120,7 +120,7 @@ export default function ServicesSection() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: i * 0.09 }}
-                className={`group relative overflow-hidden p-8 flex flex-col justify-between min-h-[220px] ${
+                className={`group relative overflow-hidden p-5 lg:p-8 flex flex-col justify-between lg:min-h-[220px] ${
                   service.highlight ? "bg-[#141209]" : "bg-[#0f0f0f]"
                 }`}
               >

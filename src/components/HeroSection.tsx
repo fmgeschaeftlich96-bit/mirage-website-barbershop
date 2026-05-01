@@ -18,7 +18,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/80 via-transparent to-transparent" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 pb-20 lg:pb-28 pt-32">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 pb-14 lg:pb-28 pt-20 lg:pt-32">
         {/* Label */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -38,7 +38,7 @@ export default function HeroSection() {
           className="font-bold leading-none mb-6 max-w-3xl"
           style={{
             fontFamily: "var(--font-playfair)",
-            fontSize: "clamp(3rem, 9vw, 7rem)",
+            fontSize: "clamp(2rem, 8vw, 7rem)",
             letterSpacing: "-0.01em",
           }}
         >
@@ -54,7 +54,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-[#9a9585] text-lg max-w-md mb-10 leading-relaxed"
+          className="text-[#9a9585] text-base lg:text-lg max-w-md mb-7 lg:mb-10 leading-relaxed"
         >
           Kein Schnickschnack. Kein Einheitslook.
           <br />
@@ -66,11 +66,11 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.8 }}
-          className="flex flex-wrap gap-4"
+          className="flex flex-col sm:flex-row gap-3 sm:gap-4"
         >
           <a
             href="#locations"
-            className="inline-flex items-center gap-3 bg-[#c9a84c] text-[#0a0a0a] text-xs font-bold tracking-[0.2em] uppercase px-7 py-4 hover:bg-[#e8c96f] transition-colors duration-300"
+            className="inline-flex items-center justify-center sm:justify-start gap-3 bg-[#c9a84c] text-[#0a0a0a] text-xs font-bold tracking-[0.15em] uppercase px-7 py-4 hover:bg-[#e8c96f] transition-colors duration-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +90,7 @@ export default function HeroSection() {
           </a>
           <a
             href="#services"
-            className="inline-flex items-center gap-3 border border-[#f5f0e8]/30 text-[#f5f0e8] text-xs font-medium tracking-[0.2em] uppercase px-7 py-4 hover:border-[#c9a84c] hover:text-[#c9a84c] transition-all duration-300"
+            className="inline-flex items-center justify-center sm:justify-start gap-3 border border-[#f5f0e8]/30 text-[#f5f0e8] text-xs font-medium tracking-[0.15em] uppercase px-7 py-4 hover:border-[#c9a84c] hover:text-[#c9a84c] transition-all duration-300"
           >
             Unsere Leistungen
           </a>
@@ -101,7 +101,7 @@ export default function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.2 }}
-          className="mt-12 flex items-center gap-3"
+          className="mt-8 lg:mt-12 flex items-center gap-3"
         >
           <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
           <span className="text-[#9a9585] text-xs tracking-[0.15em] uppercase">
