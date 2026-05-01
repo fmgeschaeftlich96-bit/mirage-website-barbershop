@@ -6,8 +6,8 @@ import { motion, useInView } from "framer-motion";
 const stats = [
   { value: "4,9 ★", label: "Google Bewertung" },
   { value: "500+", label: "Zufriedene Kunden" },
-  { value: "2+", label: "Standorte & wachsend" },
-  { value: "0", label: "Termine nötig" },
+  { value: "2", label: "Standorte" },
+  { value: "Immer", label: "Ohne Termin" },
 ];
 
 export default function StatsSection() {

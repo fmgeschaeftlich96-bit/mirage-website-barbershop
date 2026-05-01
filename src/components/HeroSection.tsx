@@ -15,7 +15,7 @@ export default function HeroSection() {
       />
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/40 via-[#0a0a0a]/20 to-[#0a0a0a]" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/80 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/92 via-[#0a0a0a]/30 to-transparent" />
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 pb-14 lg:pb-28 pt-20 lg:pt-32">
@@ -27,7 +27,7 @@ export default function HeroSection() {
           className="flex items-center gap-4 mb-6"
         >
           <span className="block w-8 h-px bg-[#c9a84c]" />
-          <span className="section-label">Classic Haircut — Classic Shave</span>
+          <span className="text-[0.7rem] font-semibold tracking-[0.1em] sm:tracking-[0.25em] uppercase text-[#c9a84c]">Classic Haircut — Classic Shave</span>
         </motion.div>
 
         {/* Main Headline */}
@@ -54,7 +54,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-[#9a9585] text-base lg:text-lg max-w-md mb-7 lg:mb-10 leading-relaxed"
+          className="text-[#c8c3b8] text-base lg:text-lg max-w-md mb-7 lg:mb-10 leading-relaxed"
         >
           Kein Schnickschnack. Kein Einheitslook.
           <br />
@@ -104,7 +104,7 @@ export default function HeroSection() {
           className="mt-8 lg:mt-12 flex items-center gap-3"
         >
           <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-          <span className="text-[#9a9585] text-xs tracking-[0.15em] uppercase">
+          <span className="text-[#c8c3b8] text-xs tracking-[0.15em] uppercase">
             Kein Termin nötig — einfach vorbeikommen
           </span>
         </motion.div>
