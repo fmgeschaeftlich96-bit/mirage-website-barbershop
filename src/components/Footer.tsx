@@ -104,11 +104,16 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-[#1a1a1a] pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-[#9a9585]/50 text-xs">
-            © 2024 MiRash Barbershop. Alle Rechte vorbehalten.
+            © 2026 MiRash Barbershop. Alle Rechte vorbehalten.
           </p>
-          <p className="text-[#9a9585]/30 text-xs">
-            Classic Haircut — Classic Shave
-          </p>
+          <a
+            href="https://fema-studio.de"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#9a9585]/30 text-xs hover:text-[#c9a84c]/50 transition-colors duration-300"
+          >
+            Website by FeMa Studio
+          </a>
         </div>
       </div>
     </footer>

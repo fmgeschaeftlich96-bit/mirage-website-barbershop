@@ -56,9 +56,9 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-[#9a9585] text-lg max-w-md mb-10 leading-relaxed"
         >
-          Tradition trifft auf modernen Stil.
+          Kein Schnickschnack. Kein Einheitslook.
           <br />
-          Für den perfekten Look. Für jeden Mann.
+          Nur ein Schnitt, der wirklich sitzt.
         </motion.p>
 
         {/* CTAs */}

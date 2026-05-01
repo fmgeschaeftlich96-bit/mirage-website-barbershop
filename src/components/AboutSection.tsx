@@ -62,22 +62,24 @@ export default function AboutSection() {
               Mirash
             </h3>
             <p className="text-[#c9a84c] text-sm tracking-[0.15em] uppercase mb-6">
-              Inhaber & Master Barber
+              Inhaber & Gründer
             </p>
 
             <p className="text-[#9a9585] text-base leading-relaxed mb-5">
-              Kein Stress, kein Termin, kein Einheitslook. Wer zu Mirash
-              kommt, bekommt einen Haarschnitt, der wirklich sitzt — und
-              einen Ort, an dem man sich einfach wohlfühlt.
+              Komm einfach rein. Kein Termin, kein Stress — und kein
+              Einheitslook. Beim Mirash Barbershop bekommst du einen Schnitt,
+              der wirklich sitzt, und eine Atmosphäre, in der du dich sofort
+              wohlfühlst.
             </p>
             <p className="text-[#9a9585] text-base leading-relaxed mb-5">
-              Mirash hat den Barbershop aufgebaut, weil er sein Handwerk
-              liebt und weiß, wie viel ein guter Schnitt ausmacht. Deshalb
-              nimmt man sich hier Zeit — für jeden einzelnen.
+              Mirash hat den Laden aufgebaut, weil er weiß, was einen guten
+              Barbershop ausmacht. Sein Team bringt das Handwerk täglich auf
+              den Punkt — mit Ruhe, Präzision und echtem Interesse an jedem
+              Kunden.
             </p>
             <p className="text-[#9a9585] text-base leading-relaxed mb-10">
-              Heute gibt es zwei Standorte: Neuruppin und Oranienburg.
-              Gleiche Qualität, gleicher Anspruch — egal wo du reinkommst.
+              Was als ein Standort begann, wächst. Heute findest du uns in
+              Neuruppin und Oranienburg — und es werden mehr.
             </p>
 
             {/* Reasons */}
@@ -90,7 +92,7 @@ export default function AboutSection() {
                   transition={{ duration: 0.5, delay: 0.4 + i * 0.1 }}
                   className="flex items-start gap-3"
                 >
-                  <span className="text-[#c9a84c] text-xs mt-0.5">✦</span>
+                  <svg className="text-[#c9a84c] mt-0.5 shrink-0" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                   <div>
                     <p className="text-[#f5f0e8] text-sm font-semibold mb-0.5">
                       {r.title}
